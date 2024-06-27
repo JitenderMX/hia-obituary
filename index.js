@@ -17,6 +17,23 @@ app.set('views', path.join(__dirname, "/views"));
 app.get('/', (req, res) => {
     res.render("home.ejs")
 })
+// Login get 
+app.get('/login', (req, res) => {
+    res.render("login.ejs")
+})
+// Sign Up get 
+app.get('/sign-up', (req, res) => {
+    res.render("sign-up.ejs")
+})
+
+// Forgot Password get 
+app.get('/forgot-password', (req, res) => {
+    res.render("forgot-password.ejs")
+})
+// Forgot Password get 
+app.get('/verify-otp', (req, res) => {
+    res.render("verify.ejs")
+})
 
 app.post('/saveImg', (req, res) => {
 console.log(req.body);

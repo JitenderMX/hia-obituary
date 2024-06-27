@@ -1,0 +1,8 @@
+// start db
+mongosh
+
+// to show dbs
+show dbs
+
+// to use dbs
+use db_name
